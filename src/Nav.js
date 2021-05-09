@@ -13,15 +13,16 @@ function Nav() {
 			window.removeEventListener("scroll");
 		};
 	}, []);
+
 	return (
-		<div className={`nav ${show} && "nav__black"}`}>
+		<div className={`nav ${show && "nav__black"}`}>
 			<img
 				className='nav__logo'
 				src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1024px-Netflix_2015_logo.svg.png'
 				alt='Netflix Logo'
 			/>
 			<img
-				classNAme='nav__avatar'
+				className='nav__avatar'
 				src='https://upload.wikimedia.org/wikipedia/commons/2/2a/Goodtimes.jpg'
 				alt='Netflix Logo'
 			/>
